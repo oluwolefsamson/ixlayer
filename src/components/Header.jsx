@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import heroImg from "../assets/heroImg.jpg";
 
@@ -20,49 +20,57 @@ const stats = [
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const onScroll = () => {
+      setScrolled(window.scrollY > 10);
+    };
+    window.addEventListener("scroll", onScroll);
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
 
   return (
     <div className="">
-      <header className="absolute inset-x-0 top-0 z-50">
+      <header
+        className={`fixed inset-x-0 top-0 z-50 transition-all ${
+          scrolled
+            ? "backdrop-blur bg-black/30"
+            : "bg-transparent"
+        }`}
+      >
         <nav
           aria-label="Global"
-          className="flex items-center justify-between p-6 lg:px-8"
+          className="flex items-center px-4 py-4 sm:px-6 lg:px-8"
         >
-          <div className="flex lg:flex-1">
-            <a href="#" className="-m-1.5 p-1.5">
-              <span className="sr-only">Your Company</span>
-              <img
-                alt=""
-                src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=600"
-                className="h-8 w-auto"
-              />
-            </a>
-          </div>
-          <div className="flex lg:hidden">
+          <h1 className="text-2xl font-semibold -tracking-tighter text-white sm:text-4xl">
+            ix<span className="text-blue-600">layer</span>
+          </h1>
+          <div className="flex lg:hidden ml-auto">
             <button
               type="button"
               onClick={() => setMobileMenuOpen(true)}
-              className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
+              className="inline-flex items-center justify-center rounded-md p-2 text-white"
             >
               <span className="sr-only">Open main menu</span>
-              <Bars3Icon aria-hidden="true" className="h-6 w-6" />
+              <Bars3Icon aria-hidden="true" className="h-6 w-6 text-white" />
             </button>
           </div>
-          <div className="hidden lg:flex lg:gap-x-12">
+          <div className="hidden lg:flex lg:flex-1 lg:justify-center lg:gap-x-12">
             {navigation.map((item) => (
               <a
                 key={item.name}
                 href={item.href}
-                className="text-md font-semibold leading-6 text-white"
+                className="text-base font-semibold leading-6 text-white"
               >
                 {item.name}
               </a>
             ))}
           </div>
-          <div className="hidden lg:flex lg:flex-1 lg:justify-end ">
+          <div className="hidden lg:flex lg:justify-end">
             <a
               href="#"
-              className="text-md font-semibold leading-6 bg-blue-400 py-2 px-4 rounded-3xl text-white"
+              className="text-base font-semibold leading-6 bg-blue-400 py-2 px-4 rounded-3xl text-white"
             >
               Request a demo
             </a>
@@ -70,23 +78,21 @@ export default function Header() {
         </nav>
       </header>
 
-      {/* Mobile Bottom Sheet Nav */}
       <div
-        className={`fixed inset-0 z-[100] flex items-end justify-center transition-all duration-300 lg:hidden ${
+        className={`fixed inset-0 z-[100] backdrop-blur-sm flex items-end justify-center transition-all duration-300 lg:hidden ${
           mobileMenuOpen ? "pointer-events-auto" : "pointer-events-none"
         }`}
         style={{
           visibility: mobileMenuOpen ? "visible" : "hidden",
         }}
       >
-        {/* Overlay */}
         <div
-          className={`absolute inset-0 bg-black bg-opacity-40 transition-opacity duration-300 ${
+          className={`absolute inset-0 bg-black bg-opacity-5 transition-opacity duration-300 ${
             mobileMenuOpen ? "opacity-100" : "opacity-0"
           }`}
           onClick={() => setMobileMenuOpen(false)}
         />
-        {/* Bottom Sheet */}
+
         <div
           className={`relative w-full bg-white rounded-t-3xl shadow-xl transition-transform duration-300 ${
             mobileMenuOpen ? "translate-y-0" : "translate-y-full"
@@ -131,7 +137,6 @@ export default function Header() {
         </div>
       </div>
 
-      {/* Hero Section */}
       <div
         className="relative isolate px-6 pt-14 lg:px-8 bg-cover bg-center bg-no-repeat h-[700px] lg:h-[1300px]"
         style={{

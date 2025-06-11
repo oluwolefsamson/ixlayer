@@ -5,7 +5,6 @@ const CTA = () => {
   return (
     <section className="relative w-full pt-[1500px] px-4 lg:pt-[200px] h-auto lg:h-[580px] py-20 lg:py-44 bg-gradient-to-br from-[#0a1834] via-[#11294d] to-[#0a1834] ">
       <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center justify-between px-4">
-        {/* Left Content */}
         <div className="flex-1 z-10">
           <span className="inline-block mb-4 mt-0 lg:mt-0 px-4 py-1 rounded-full bg-white/10 text-xs font-semibold text-white border border-white/20">
             Why ixlayer works

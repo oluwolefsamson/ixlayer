@@ -23,10 +23,13 @@ const Health = () => {
       {/* Hero Section */}
       <div className="max-w-7xl mx-auto px-4 py-10 md:pt-24">
         <div className="text-center mb-16">
-          <h1 className="text-4xl md:text-5xl font-extrabold text-gray-100 mb-6">
+          <span className="inline-block mb-4 mt-0 lg:mt-0 px-4 py-1 rounded-full bg-white/10 text-xs font-semibold text-white border border-white/20">
+            Why ixlayer works
+          </span>
+          <h1 className="text-4xl md:text-4xl font-extrabold text-gray-100 mb-6">
             Health testing within reach.
           </h1>
-          <p className="text-xl md:text-2xl  text-gray-400 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-lg md:text-xl  text-gray-400 max-w-3xl mx-auto leading-relaxed">
             Get ahead of today's health challenges in a rapidly evolving
             industry with bilayer health testing - fast, affordable, and proven
             reliable by over 4 million people.

@@ -3,17 +3,12 @@ import React from "react";
 const Footer = () => {
   return (
     <footer className="bg-[#0a1019] text-white pt-12 pb-6 border-t-2 border-[#111827]">
-      <div className="max-w-7xl mx-auto flex flex-wrap justify-between gap-12 px-4">
+      <div className="max-w-5xl mx-auto flex flex-wrap justify-between gap-12 px-4">
         {/* Left Section */}
         <div className="min-w-[220px] flex-1 mb-8">
-          <div className="flex items-center mb-4">
-            <img
-              src="https://ixlayer.com/wp-content/themes/ixlayer/assets/images/logo.svg"
-              alt="ixlayer logo"
-              className="w-9 mr-3"
-            />
-            <span className="font-bold text-lg tracking-wide">ixlayer</span>
-          </div>
+          <h1 className="text-2xl font-semibold -tracking-tighter text-white sm:text-4xl">
+            ix<span className="text-blue-600">layer</span>
+          </h1>
           <p className="mb-4 text-base leading-relaxed">
             A complete solution
             <br />
@@ -28,7 +23,7 @@ const Footer = () => {
         </div>
 
         {/* Contact Section */}
-        <div className="min-w-[180px] flex-1 mb-8">
+        <div className="max-w-[180px] flex-1 mb-8">
           <div className="mb-6">
             <div className="font-semibold mb-1">Contact Us</div>
             <a
@@ -56,10 +51,7 @@ const Footer = () => {
             <div className="font-semibold mb-2">About</div>
             <ul className="text-gray-400 text-sm space-y-1">
               <li>
-                <a
-                  href="#"
-                  className="hover:text-blue-400 transition"
-                >
+                <a href="#" className="hover:text-blue-400 transition">
                   Customers & Partners
                 </a>
               </li>
