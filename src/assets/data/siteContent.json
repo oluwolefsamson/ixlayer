@@ -1,0 +1,47 @@
+{
+  "branding": {
+    "logo": "ix",
+    "highlight": "layer"
+  },
+  "navigation": [
+    { "name": "Solution", "href": "#" },
+    { "name": "Resources", "href": "#" },
+    { "name": "About", "href": "#" },
+    { "name": "Contact", "href": "#" }
+  ],
+  "heroSection": {
+    "heading": "Health testing within",
+    "highlight": "reach.",
+    "description": "Get ahead of today's health challenges in a rapidly evolving industry with ixlayer health testing—fast, affordable, and proven reliable by over 4 million people.",
+    "primaryCta": "Request a demo",
+    "secondaryCta": "Request a demo",
+    "backgroundImage": "/src/assets/heroImg.jpg"
+  },
+  "stats": [
+    { "id": 1, "value": "Curofins" },
+    { "id": 2, "value": "Charles-river" },
+    { "id": 3, "value": "UCSF-Health" },
+    { "id": 4, "value": "biotechne" }
+  ],
+  "healthSection": {
+    "ctaText": "Request a demo",
+    "heading": "Health testing within",
+    "highlight": "reach.",
+    "description": "Get ahead of today's health challenges in a rapidly evolving industry with bidayer health testing",
+    "backgroundImage": "/src/assets/health.jpg",
+    "icons": [
+      [
+        { "text": "Evolving industry" },
+        { "text": "Evolving industry" },
+        { "text": "ixlayer health testing" },
+        { "text": "health testing" }
+      ],
+      [
+        { "text": "Evolving industry" },
+        { "text": "Evolving industry" },
+        { "text": "ixlayer health testing" },
+        { "text": "health testing" }
+      ]
+    ]
+  }
+}

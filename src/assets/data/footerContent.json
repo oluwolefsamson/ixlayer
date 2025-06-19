@@ -1,0 +1,26 @@
+{
+  "brandName": "ixlayer",
+  "brandHighlightColor": "text-blue-600",
+  "brandDescription": ["A complete solution", "for Health Testing."],
+  "healthTestingHighlightColor": "text-blue-400",
+  "copyrightText": "© ixLayer Inc. 2025.\nAll Rights Reserved",
+  "contact": {
+    "title": "Contact Us",
+    "email": "info@ixlayer.com",
+    "officeTitle": "Office",
+    "officeLocation": "Silicon Valley, CA"
+  },
+  "links": {
+    "aboutTitle": "About",
+    "aboutLinks": [
+      "Customers & Partners",
+      "Careers",
+      "Privacy Policy",
+      "Terms of Service",
+      "Responsible Disclosure",
+      "Policy"
+    ],
+    "guidesTitle": "Guides & White papers",
+    "guidesLinks": ["Blog", "Case Studies"]
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "hero": {
+    "badgeText": "Why ixlayer works",
+    "headline": "Health testing within reach.",
+    "paragraph": "Get ahead of today's health challenges in a rapidly evolving industry with bilayer health testing - fast, affordable, and proven reliable by over 4 million people."
+  },
+  "cards": [
+    {
+      "highlightColor": "text-sky-400",
+      "heading": "Health testing within reach.",
+      "headingHighlight": "reach.",
+      "description": "Get ahead of today’s health challenges in a rapidly evolving industry with ixlayer health testing.",
+      "buttonText": "Request a demo"
+    },
+    {
+      "highlightColor": "text-yellow-400",
+      "heading": "Health testing within reach.",
+      "headingHighlight": "reach.",
+      "description": "Get ahead of today’s health challenges in a rapidly evolving industry with ixlayer health testing.",
+      "buttonText": "Request a demo"
+    },
+    {
+      "highlightColor": "text-purple-400",
+      "heading": "Health testing within reach.",
+      "headingHighlight": "reach.",
+      "description": "Get ahead of today’s health challenges in a rapidly evolving industry with ixlayer health testing.",
+      "buttonText": "Request a demo"
+    }
+  ],
+  "infoCards": [
+    {
+      "color": "text-blue-300",
+      "title": "Evolving industry with ixlayer health testing",
+      "desc": "Get ahead of today's health challenges in a rapidly evolving."
+    },
+    {
+      "color": "text-yellow-400",
+      "title": "Evolving industry with ixlayer health testing",
+      "desc": "Get ahead of today's health challenges in a rapidly evolving."
+    },
+    {
+      "color": "text-purple-400",
+      "title": "Evolving industry with ixlayer health testing",
+      "desc": "Get ahead of today's health challenges in a rapidly evolving."
+    }
+  ]
+}
